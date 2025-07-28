@@ -176,25 +176,4 @@ The application comes with 19 pre-configured Indian cuisine items:
 
 **Drinks**: Masala Chaas, Sweet Lassi, Lemon Soda, Cold Coffee, Coconut Water, Iced Tea
 
-## 🚨 Important Notes
 
-- **No Persistence**: Combos are generated fresh each time (no database storage of combos)
-- **MongoDB Required**: Menu items are stored in MongoDB
-- **CORS Enabled**: Frontend can communicate with backend
-- **Development Mode**: Both services run in development mode with hot reloading
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the ISC License.
-
----
-
-**Built with ❤️ using the MERN stack**
