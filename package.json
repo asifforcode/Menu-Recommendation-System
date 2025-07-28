@@ -1,0 +1,17 @@
+{
+  "name": "combo-meal-recommendation-engine",
+  "version": "1.0.0",
+  "description": "A MERN stack application for generating daily combo meal recommendations",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm start",
+    "start": "cd backend && npm start",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "build": "cd frontend && npm run build"
+  },
+  "keywords": ["mern", "combo", "menu", "recommendation", "restaurant"],
+  "author": "",
+  "license": "ISC"
+}

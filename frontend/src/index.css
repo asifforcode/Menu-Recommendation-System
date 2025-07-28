@@ -1,0 +1,252 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.day-selector {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.day-selector select {
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 25px;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+.loading {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  margin: 50px 0;
+}
+
+.error {
+  background: #ff6b6b;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.day-info {
+  background: rgba(255,255,255,0.95);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.day-info h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.taste-preference {
+  display: inline-block;
+  background: #4ecdc4;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.combos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.combo-card {
+  background: rgba(255,255,255,0.95);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.combo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+}
+
+.combo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.combo-id {
+  background: #667eea;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.taste-profile {
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.taste-spicy { background: #ff6b6b; color: white; }
+.taste-sweet { background: #4ecdc4; color: white; }
+.taste-savory { background: #45b7d1; color: white; }
+.taste-mixed { background: #96ceb4; color: white; }
+
+.combo-items {
+  margin-bottom: 20px;
+}
+
+.combo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.combo-item:last-child {
+  border-bottom: none;
+}
+
+.item-category {
+  font-size: 0.8rem;
+  color: #666;
+  text-transform: uppercase;
+  font-weight: bold;
+  min-width: 60px;
+}
+
+.item-name {
+  flex: 1;
+  margin: 0 15px;
+  font-weight: 500;
+  color: #333;
+}
+
+.item-calories {
+  background: #f8f9fa;
+  padding: 4px 8px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.combo-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.stat {
+  text-align: center;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+.stat-value {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+  display: block;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.reasoning {
+  background: #e3f2fd;
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 4px solid #2196f3;
+  font-style: italic;
+  color: #1565c0;
+  font-size: 0.95rem;
+}
+
+.no-combos {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  margin: 50px 0;
+  padding: 30px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+  }
+  
+  .combos-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .combo-card {
+    padding: 20px;
+  }
+  
+  .combo-stats {
+    grid-template-columns: 1fr;
+  }
+}
